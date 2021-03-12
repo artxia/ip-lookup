@@ -19,6 +19,11 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: 'Install dependencies'
+        run: |
+          python -m pip install --upgrade requests
+          python -m pip install --upgrade beautifulsoup4
+
       - name: Run Scripts
         run: python ./scripts/dataupload.py
 
