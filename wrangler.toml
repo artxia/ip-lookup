@@ -5,5 +5,5 @@ workers_dev = true
 route = ""
 zone_id = ""
 kv-namespaces = [
-	 { binding = "IP2NETWORK", id = "" }
+	 { binding = "IP2NETWORK", id = "bc4e5d69804543f780b0d0a3210ee5b8" }
 ]
