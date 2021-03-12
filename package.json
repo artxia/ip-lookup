@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "ip-lookup",
+  "name": "ip",
   "version": "1.0.0",
   "description": "A cloudflare workers based free ip network lookup service",
   "main": "index.js",
