@@ -22,7 +22,8 @@ jobs:
       - name: 'Install dependencies'
         run: |
           python -m pip install --upgrade requests
-          python -m pip install --upgrade beautifulsoup4
+          python -m pip install --upgrade pip3
+          pip3 install toml twisted pymodbus
 
       - name: Run Scripts
         run: python ./scripts/dataupload.py
