@@ -167,7 +167,7 @@ def main():
     wr = toml.load("wrangler.toml")
     cf_account_id = wr["account_id"]
     cf_namespace_id = wr["kv-namespaces"][0]["id"]
-    cf_key = toml.load(os.path.join(os.getenv('HOME'),'.wrangler/config/default.toml')).get('api_token')
+    cf_key = toml.load(os.path.join(os.getenv('HOME'),'/usr/local/bin/wrangler/config/default.toml')).get('api_token')
 
     if not cf_account_id or not cf_namespace_id or not cf_key:
         print("error: cloudflare credentials not set up in env", file=sys.stderr)
