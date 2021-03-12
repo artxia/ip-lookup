@@ -32,4 +32,6 @@ jobs:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
 
       - name: Run Scripts
+        env:
+          api_token: ${{ secrets.CF_API_TOKEN }}
         run: python ./scripts/dataupload.py ./data/
