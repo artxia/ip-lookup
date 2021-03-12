@@ -164,7 +164,7 @@ def main():
         print("usage: %s <path/to/ip-db.tsv.gz> [... <db2.gz>]" % sys.argv[0], file=sys.stderr)
         sys.exit(1)
 
-    wr = toml.load("wrangler.toml")
+    wr = toml.load("./wrangler.toml")
     cf_account_id = wr["account_id"]
     cf_namespace_id = wr["kv-namespaces"][0]["id"]
     cf_key = os.environ["api_token"]
