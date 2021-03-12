@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Configuration File
-        run: python3 ./scripts/dataupload.py
+      - name: Run Scripts
+        run: python ./scripts/dataupload.py
 
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
